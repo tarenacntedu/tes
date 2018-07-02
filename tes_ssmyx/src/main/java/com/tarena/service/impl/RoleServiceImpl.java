@@ -5,6 +5,7 @@ import java.util.List;
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.tarena.dao.RoleMapper;
 import com.tarena.entity.Role;
@@ -19,10 +20,12 @@ public class RoleServiceImpl implements IRoleService {
 	private RoleMapper roleMapper;
     @Resource(name="pageUtil")
     private PageUtil pageUtil;
-	/**
-	 * 1.查询总记录
 	
-	 */
+    public Result rolefiefindbypage(Page page) {
+		int pagesize=pageUtil.getPageSize();
+		
+		return null;
+	}
     
 	public Result findRolesByPage(Page page) {
 		page.setPageSize(pageUtil.getPageSize());
@@ -96,5 +99,8 @@ public class RoleServiceImpl implements IRoleService {
 		}
 		return result;
 	}
+
+	
+
 
 }

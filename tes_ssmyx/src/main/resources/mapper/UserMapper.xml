@@ -8,8 +8,8 @@
 		select 
 		     user_id as id
 		from t_user
-		where user_loginname=#{loginName} and
-		      user_password=#{password}
+		where user_loginname=#{loginName} and 
+		user_password=#{password}
 	</select>
 	
 	<!-- role的ResultMap -->

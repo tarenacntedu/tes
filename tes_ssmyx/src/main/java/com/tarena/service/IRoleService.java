@@ -17,4 +17,5 @@ public interface IRoleService {
 	public Result updateRole(Role role);
 	//查询所有角色的名字
 	public Result findAllRoleName();
+	public Result rolefiefindbypage(Page page);
 }
